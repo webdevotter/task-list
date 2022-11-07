@@ -2,8 +2,8 @@ let val;
 
 val = document;
 val = document.all;
-val = document.all[2];
 val = document.all.length;
+val = document.all[2];
 val = document.head;
 val = document.body;
 val = document.doctype;
@@ -36,5 +36,6 @@ let scriptsArr = Array.from(scripts);
 scriptsArr.forEach(function(script) {
   console.log(script.getAttribute('src'));
 });
+
 
 console.log(val);
