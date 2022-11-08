@@ -1,41 +1,22 @@
-let val;
+// document.getElementById()
 
-val = document;
-val = document.all;
-val = document.all.length;
-val = document.all[2];
-val = document.head;
-val = document.body;
-val = document.doctype;
-val = document.domain;
-val = document.URL;
-val = document.characterSet;
-val = document.contentType;
+console.log(document.getElementById('task-title'));
 
-val = document.forms;
-val = document.forms[0];
-val = document.forms[0].id;
-val = document.forms[0].method;
-val = document.forms[0].action;
+// Get things from the element
 
-val = document.links;
-val = document.links[0];
-val = document.links[0].id;
-val = document.links[0].className;
-val = document.links[0].classList[0];
+console.log(document.getElementById('task-title').id);
+console.log(document.getElementById('task-title').className);
 
-val = document.images;
+const taskTitle = document.getElementById('task-title');
 
-val = document.scripts;
-val = document.scripts[2].getAttribute('src');
+// Change Styling
 
-let scripts = document.scripts;
+taskTitle.style.background = '#333';
+taskTitle.style.color = '#fff';
+taskTitle.style.padding = '5px';
+// document.getElementById('task-title').style.display = 'none';
 
-let scriptsArr = Array.from(scripts);
-
-scriptsArr.forEach(function(script) {
-  console.log(script.getAttribute('src'));
-});
-
-
-console.log(val);
+// Change content
+taskTitle.textContent = 'Task List';
+taskTitle.innerText = 'My Tasks';
+taskTitle.innerHTML = '<span style="color:red">Task List</span>';
