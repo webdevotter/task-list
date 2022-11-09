@@ -39,6 +39,22 @@ val = list.firstElementChild;
 val = list.lastChild;
 val = list.lastElementChild;
 
+// Count child elements
 val = list.childElementCount;
+
+
+// Get parent node
+val = listItem.parentNode;
+val = listItem.parentNode.parentNode;
+
+// Get next sibling
+val = listItem.nextSibling;
+val = listItem.nextElementSibling.nextElementSibling.previousElementSibling;
+
+// Get previous sibling
+
+val = listItem.previousSibling;
+val = listItem.previousElementSibling;
+
 
 console.log(val);
